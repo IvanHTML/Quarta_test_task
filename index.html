@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quarta</title>
+    <link rel="stylesheet" href="css/slyle.min.css">
+</head>
+<body>
+    <section class="navbar">
+        <div class="navbar__logo">
+            <img src="logos/navbar/figma.svg" alt="figma">
+        </div>
+        <div class="navbar__content">
+            <img src="logos/navbar/moon.png" alt="moon">
+            <img src="logos/navbar/avatar.png" alt="avatar" class="avatar">
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="content__block tasksList">
+            <div class="content__block-header">
+                <div class="header-text">к выполнению 2</div>
+                <div class="plus"></div>
+            </div>
+            <div class="cards">
+                <div class="cards__item">
+                    <div class="cards__item-header">
+                        <div class="cards__item-title">Подготовка оболочки для микрофронтендов</div>
+                        <div class="cards__item-more">
+                            <img src="icons/more.png" alt="more">
+                        </div>
+                    </div>
+                    <div class="cards__item-descr">Необходимо подготовить оболочку для сервисов А и Б. Также необходимо организовать CI/CD указанных сервисов.</div>
+
+                    <div class="cards__item-footer">
+                        <div class="cards__item-footer-assignee">
+                            <img src="icons/female.png" alt="assignee">
+                        </div>
+                        <div class="cards__item-footer-status">
+                            <img src="icons/message.png" alt="message">
+                            32
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards__item">
+                    <div class="cards__item-header">
+                        <div class="cards__item-title">Сверстать тестовое задание</div>
+                        <div class="cards__item-more">
+                            <img src="icons/more.png" alt="more">
+                        </div>
+                    </div>
+                    <div class="cards__item-descr">Тестовое задание в аттаче.</div>
+
+                    <div class="cards__item-footer">
+                        <div class="cards__item-footer-choose">
+                            <a href="#">Назначить</a>
+                        </div>
+                        <div class="cards__item-footer-status">
+                            <img src="icons/file.png" alt="message">
+                            1
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="content__block inProgress">
+            <div class="content__block-header">
+                <div class="header-text">в работе 0</div>
+                <div class="plus"></div>
+            </div>
+        </div>
+        <div class="content__block tasksDone">
+            <div class="content__block-header">
+                <div class="header-text">выполнено 3</div>
+                <div class="plus"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
