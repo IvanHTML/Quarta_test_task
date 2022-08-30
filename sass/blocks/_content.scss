@@ -1,6 +1,6 @@
 .content {
     position: relative;
-    width: 1820px;
+    width: 1840px;
     height: 1080px;
     padding: 10px;
     background-color: #F2F3FB;
@@ -8,12 +8,19 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    // &__block.inProgress {
+    //     .cards {
+    //         height: 1010px;
+    //         border: 1px solid black;
+    //     }
+    // }
     &__block {
         width: 600px;
         height: 1060px;
         padding-top: 10px;
-        &:nth-child(2) {
-            border: 1px dashed black;
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
         }
         &-header {
             display: flex;
