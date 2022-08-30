@@ -1,6 +1,6 @@
 .content {
     position: relative;
-    width: 1840px;
+    width: 1820px;
     height: 1080px;
     padding: 10px;
     background-color: #F2F3FB;
@@ -12,9 +12,9 @@
         width: 600px;
         height: 1060px;
         padding-top: 10px;
-        // &:first-child {
-        //     border: 1px solid black;
-        // }
+        &:nth-child(2) {
+            border: 1px dashed black;
+        }
         &-header {
             display: flex;
             justify-content: space-between;
