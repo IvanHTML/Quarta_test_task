@@ -8,17 +8,34 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    // &__block.inProgress {
-    //     .cards {
-    //         height: 1010px;
-    //         border: 1px solid black;
-    //     }
-    // }
+    overflow: hidden;
+    &__block.inProgress {
+        .cards {
+            position: relative;
+            height: 1010px;
+            border: 4px dashed #D8E0EB;
+            border-radius: 5px;
+            .text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: 'Inter', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: #808EA5;
+                text-align: center;
+            }
+        }
+    }
     &__block {
         width: 600px;
         height: 1060px;
         padding-top: 10px;
         margin-right: 10px;
+        overflow: hidden;
         &:last-child {
             margin-right: 0;
         }
@@ -38,12 +55,17 @@
             .plus {
                 width: 20px;
                 height: 20px;
-                background: url('../../icons/round-button.png') center (center / cover) no-repeat;
+                background: url('../icons/round-button.png') center (center / cover) no-repeat;
                 cursor: pointer;
                 &:hover {
-                    background: url('../../icons/round-button-hover.png') center (center / cover) no-repeat;
+                    background: url('../icons/round-button-hover.png') center (center / cover) no-repeat;
                 }
             }
         }
+    }
+    .float-button {
+        position: absolute;
+        bottom: 40px;
+        right: 40px;
     }
 }
