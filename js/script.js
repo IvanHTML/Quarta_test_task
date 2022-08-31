@@ -13,5 +13,15 @@ window.addEventListener('DOMContentLoaded', () => {
     backdrop.addEventListener('click', () => {
         sidebar.classList.remove('active');
     });
+
+    // modeToggle
+
+    const modeToggle = document.querySelector('.mode'),
+          content = document.querySelector('.content');
+
+    modeToggle.addEventListener('click', () => {
+        modeToggle.classList.toggle('dark');
+        content.classList.toggle('dark');
+    });
     
 });

@@ -24,6 +24,19 @@
         img {
            display: block;
            margin: 0 auto;
+           cursor: pointer;
+        }
+        .mode.light {
+            width: 25px;
+            height: 25px;
+            margin: 0 auto;
+            background: url('../logos/navbar/mode-light.svg') center (center / cover) no-repeat;
+        }
+        .mode.dark {
+            width: 25px;
+            height: 25px;
+            margin: 0 auto;
+            background: url('../logos/navbar/mode-night.svg') center (center / cover) no-repeat;
         }
         .round {
             margin-top: 24px;

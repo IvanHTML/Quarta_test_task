@@ -13,7 +13,9 @@
             <img src="logos/navbar/figma.svg" alt="figma">
         </div>
         <div class="navbar__content">
-            <img src="logos/navbar/mode-night.svg" alt="mode-night">
+            <div class="mode light dark">
+                <!-- <img src="logos/navbar/mode-night.svg" alt="mode-night"> -->
+            </div>
             <div class="round">
                 <img src="logos/navbar/avatar.png" alt="avatar">
             </div>
@@ -25,10 +27,18 @@
         <div class="sidebar">
             <div class="sidebar__block">
                 <div class="sidebar__block-title">Настройки</div>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
+                <div class="sidebar__input">
+                    <input required name="tasksList" id="tasksList" type="checkbox" class="custom-checkbox">
+                    <label for="tasksList">К выполнению</label>
+                </div>
+                <div class="sidebar__input">
+                    <input required name="inProgress" id="inProgress" type="checkbox" class="custom-checkbox">
+                    <label for="inProgress">В работе</label>
+                </div>
+                <div class="sidebar__input">
+                    <input required name="tasksDone" id="tasksDone" type="checkbox" class="custom-checkbox">
+                    <label for="tasksDone">Выполнено</label>
+                </div>
             </div>
             <div class="backdrop"></div>
         </div>

@@ -9,6 +9,9 @@
     flex-direction: row;
     align-items: flex-start;
     overflow: hidden;
+    &.dark {
+        background-color: #091E42;
+    }
     &__block.inProgress {
         .cards {
             position: relative;
@@ -67,5 +70,6 @@
         position: absolute;
         bottom: 40px;
         right: 40px;
+        cursor: pointer;
     }
 }

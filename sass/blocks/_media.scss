@@ -1,0 +1,35 @@
+@media (max-width: 1440px) { // check from 1201px
+    .content {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 1200px) { // check from 993px
+    .content {
+        width: 992px;
+    };
+}
+
+@media (max-width: 992px) { // check from 769px
+    .content {
+        flex-direction: column;
+        width: 735px;
+        height: auto;
+        &__block {
+            height: auto;
+            &.inProgress .cards {
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) { // check from 577px
+    .content {
+        width: 725px;
+    }
+}
+
+@media (max-width: 576px) { // check from 320px
+
+}
